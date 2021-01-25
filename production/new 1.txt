@@ -1,0 +1,8 @@
+<?php
+
+$nama_obat = $_POST['nama_obat'];
+
+$sql_query = "SELECT * FROM obat WHERE nama_obat = '$nama_obat'";
+$sql_execute = mysqli_query($koneksi, $sql_query);
+
+?>
